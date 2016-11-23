@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @SuppressWarnings("serial")
 @Entity
-@Table( name="publishhouse" )
+@Table(name = "publishhouse")
 public class PublishHouseHibernate implements Serializable {
 
 	@Id
@@ -19,15 +19,16 @@ public class PublishHouseHibernate implements Serializable {
 	private String name;
 
 	private String email;
-	
-	public PublishHouseHibernate(){}
+
+	public PublishHouseHibernate() {
+	}
 
 	public PublishHouseHibernate(String name, String email) {
-    this.name = name;
-    this.email = email;
-  }
+		this.name = name;
+		this.email = email;
+	}
 
-  public Long getId() {
+	public Long getId() {
 		return id;
 	}
 
