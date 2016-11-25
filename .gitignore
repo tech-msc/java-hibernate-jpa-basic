@@ -4,4 +4,7 @@
 /java-hibernate-jpa-basic/.settings
 /java-hibernate-jpa-basic/.project
 /java-hibernate-jpa-basic/.classpath
+/java-hibernate-jpa-basic/src/home
+/java-hibernate-jpa-basic/src/WEB-INF/persistence.old
 /.git
+/.gitignore
