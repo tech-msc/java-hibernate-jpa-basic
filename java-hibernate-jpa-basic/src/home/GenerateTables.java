@@ -10,8 +10,8 @@ public class GenerateTables {
 
 		hb.setUp();
 
-		String name = JOptionPane.showInputDialog("Name: ");
-		String email = JOptionPane.showInputDialog("Email: ");
+		String name = JOptionPane.showInputDialog("Publishing house name: ");
+		String email = JOptionPane.showInputDialog("Publishing house email: ");
 
 		hb.testBasicInsert(name, email);
 

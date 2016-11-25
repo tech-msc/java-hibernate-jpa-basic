@@ -9,7 +9,7 @@
             		Something here
         	</description>
 
-		<!-- <class>home.PublishHouseHibernate</class> -->
+		<!-- <class>home.PublishingHouseHibernate</class> -->
 
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />

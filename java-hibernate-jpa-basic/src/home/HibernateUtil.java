@@ -23,15 +23,15 @@ public class HibernateUtil {
 		EntityManager em = emf.createEntityManager();
 		em.getTransaction().begin();
 
-		List<PublishHouseHibernate> result = em
-				.createQuery("from PublishHouseHibernate",
-						PublishHouseHibernate.class)
+		List<PublishingHouseHibernate> result = em
+				.createQuery("from PublishingHouseHibernate",
+						PublishingHouseHibernate.class)
 				.getResultList();
 
-		for (PublishHouseHibernate pb : result) {
+		for (PublishingHouseHibernate pb : result) {
 			
 			System.out.println(
-					"PublishHouse: Name: " + pb.getName() + ", Email: " + pb.getEmail());
+					"PublishingHouse: Name: " + pb.getName() + ", Email: " + pb.getEmail());
 		}
 
 		em.getTransaction().commit();
@@ -45,7 +45,7 @@ public class HibernateUtil {
 		
 		EntityManager em = emf.createEntityManager();
 		em.getTransaction().begin();
-		em.persist(new PublishHouseHibernate(name, email));
+		em.persist(new PublishingHouseHibernate(name, email));
 		em.getTransaction().commit();
 		System.out.println("Insert realized... :)");
 		em.clear();

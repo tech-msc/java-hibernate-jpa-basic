@@ -9,8 +9,8 @@ import javax.persistence.Table;
 
 @SuppressWarnings("serial")
 @Entity
-@Table(name = "publishhouse")
-public class PublishHouseHibernate implements Serializable {
+@Table(name = "publishinghouse")
+public class PublishingHouseHibernate implements Serializable {
 
 	@Id
 	@GeneratedValue
@@ -20,10 +20,10 @@ public class PublishHouseHibernate implements Serializable {
 
 	private String email;
 
-	public PublishHouseHibernate() {
+	public PublishingHouseHibernate() {
 	}
 
-	public PublishHouseHibernate(String name, String email) {
+	public PublishingHouseHibernate(String name, String email) {
 		this.name = name;
 		this.email = email;
 	}
