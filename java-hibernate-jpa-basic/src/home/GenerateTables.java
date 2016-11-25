@@ -6,18 +6,18 @@ public class GenerateTables {
 
 	public static void main(String[] args) throws Exception {
 
-		HibernateUtil hibernateUtil = new HibernateUtil();
+		HibernateUtil hb = new HibernateUtil();
 
-		hibernateUtil.setUp();
+		hb.setUp();
 
 		String name = JOptionPane.showInputDialog("Publishing house name: ");
 		String email = JOptionPane.showInputDialog("Publishing house email: ");
 
-		hibernateUtil.testBasicInsert(name, email);
+		hb.testBasicInsert(name, email);
 
-		hibernateUtil.testBasicList();
+		hb.testBasicList();
 
-		hibernateUtil.tearDown();
+		hb.tearDown();
 
 	}
 }
